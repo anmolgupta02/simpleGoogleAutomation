@@ -42,13 +42,14 @@ public class automation {
 		searchBox = driver.findElement(By.xpath("/html/body/div[1]/div[4]/form/div[2]/div[1]/div[1]/div/div[2]/input"));
 
 		searchBox.sendKeys("Rsk-Bsl");
-
+		
 		searchButtonn = driver
 				.findElement(By.xpath("/html/body/div[1]/div[4]/form/div[2]/div[1]/div[3]/center/input[1]"));
 
 		// Automating Enter Key Functionality.
 		searchButtonn.sendKeys(Keys.RETURN);
 
+		//Clicking on the first link 
 		resultLink = driver.findElement(By.xpath("/html/body/div[7]/div[3]/div[10]/div[1]/div[2]/div/div[2]/div[2]/div/div/div[1]/div/div[1]/div/div/div[1]/a/div/cite"));
 		resultLink.click();
 		
