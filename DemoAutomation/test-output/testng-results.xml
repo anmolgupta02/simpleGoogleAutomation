@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="5581" started-at="2019-09-17T16:55:20 IST" finished-at="2019-09-17T16:55:26 IST">
+  <suite name="Default suite" duration-ms="5610" started-at="2019-09-17T17:42:53 IST" finished-at="2019-09-17T17:42:59 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="5581" started-at="2019-09-17T16:55:20 IST" finished-at="2019-09-17T16:55:26 IST">
+    <test name="Default test" duration-ms="5610" started-at="2019-09-17T17:42:53 IST" finished-at="2019-09-17T17:42:59 IST">
       <class name="automation">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:automation@3e9b1010]" name="Setup" is-config="true" duration-ms="4250" started-at="2019-09-17T16:55:16 IST" finished-at="2019-09-17T16:55:20 IST">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:automation@1e43e323]" name="Setup" is-config="true" duration-ms="4897" started-at="2019-09-17T17:42:48 IST" finished-at="2019-09-17T17:42:53 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="testLogin()[pri:0, instance:automation@3e9b1010]" name="testLogin" duration-ms="5547" started-at="2019-09-17T16:55:20 IST" finished-at="2019-09-17T16:55:26 IST">
+        <test-method status="PASS" signature="testLogin()[pri:0, instance:automation@1e43e323]" name="testLogin" duration-ms="5532" started-at="2019-09-17T17:42:53 IST" finished-at="2019-09-17T17:42:59 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:automation@3e9b1010]" name="tearDown" is-config="true" duration-ms="812" started-at="2019-09-17T16:55:26 IST" finished-at="2019-09-17T16:55:26 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:automation@1e43e323]" name="tearDown" is-config="true" duration-ms="881" started-at="2019-09-17T17:42:59 IST" finished-at="2019-09-17T17:43:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
