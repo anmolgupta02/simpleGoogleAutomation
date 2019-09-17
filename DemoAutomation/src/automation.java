@@ -35,7 +35,7 @@ public class automation {
 		driver.get("https://www.google.com");
 
 		@SuppressWarnings("unused")
-		WebElement Logo, searchBox, searchButtonn;
+		WebElement Logo, searchBox, searchButtonn, resultLink;
 
 		Logo = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("hplogo")));
 
@@ -49,10 +49,14 @@ public class automation {
 		// Automating Enter Key Functionality.
 		searchButtonn.sendKeys(Keys.RETURN);
 
+		resultLink = driver.findElement(By.xpath("/html/body/div[7]/div[3]/div[10]/div[1]/div[2]/div/div[2]/div[2]/div/div/div[1]/div/div[1]/div/div/div[1]/a/div/cite"));
+		resultLink.click();
+		
 		System.out.println("Logo found");
 
 		Thread.sleep(3000);
 	}
+	
 
 	@AfterSuite
 	public void tearDown() {
