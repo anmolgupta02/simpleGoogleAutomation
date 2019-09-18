@@ -3,6 +3,8 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
@@ -19,18 +21,26 @@ public class automation {
 		System.out.println("Setting up the data");
 
 		System.setProperty("webdriver.chrome.driver", "E:\\jars\\chromedriver.exe");
+		
 
-		driver = new ChromeDriver();
+		new DesiredCapabilities();
+		DesiredCapabilities sslCapablities = DesiredCapabilities.chrome();
+		sslCapablities.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
+		
+		driver = new ChromeDriver(sslCapablities);
 
 		driver.manage().window().maximize();
 		// Implicite Wait.
 		// driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 
 		wait = new WebDriverWait(driver, 15);
+		
+			
+		
 	}
 
 	@Test
-	public void testLogin() throws Exception {
+	public void googleSearch() throws Exception {
 		System.out.println("Trying to open link");
 		driver.get("https://www.google.com");
 
@@ -48,9 +58,9 @@ public class automation {
 
 		// Automating Enter Key Functionality.
 		searchButtonn.sendKeys(Keys.RETURN);
-
+		Thread.sleep(5000);
 		//Clicking on the first link 
-		resultLink = driver.findElement(By.xpath("/html/body/div[7]/div[3]/div[10]/div[1]/div[2]/div/div[2]/div[2]/div/div/div[1]/div/div[1]/div/div/div[1]/a/div/cite"));
+		resultLink = driver.findElement(By.xpath("//*[contains(text(),'Offshore Outsourcing Software Development Company | RSK ...')]"));
 		resultLink.click();
 		
 		System.out.println("Logo found");
@@ -63,5 +73,6 @@ public class automation {
 	public void tearDown() {
 		System.out.println("Quiting Chrome");
 		driver.quit();
+		
 	}
 }
