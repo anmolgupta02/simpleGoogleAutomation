@@ -1,3 +1,5 @@
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -69,6 +71,7 @@ public class automation {
 	}
 	
 
+	@AfterMethod
 	@AfterSuite
 	public void tearDown() {
 		System.out.println("Quiting Chrome");
