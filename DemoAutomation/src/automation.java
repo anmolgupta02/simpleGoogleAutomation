@@ -20,6 +20,10 @@ public class automation {
 
 	@BeforeSuite
 	public void Setup() {
+	
+		//GitTutorialDemo
+		
+		
 		System.out.println("Setting up the data");
 
 		System.setProperty("webdriver.chrome.driver", "E:\\jars\\chromedriver.exe");
